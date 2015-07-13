@@ -1,0 +1,58 @@
+@import "_colors";
+@import "compass/css3/font-face";
+
+
+@import "../bower_components/ionic/scss/ionic";
+
+@font-face {
+  font-family: "Quicksand";
+  src: url('../fonts/Quicksand-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: Quicksand;
+}
+
+.logo {
+	background-image: url('../../images/logo.jpg');
+	background-repeat: no-repeat;
+	background-size: 147px;
+	height: 100px;
+	margin-left: 21px;
+}
+
+.linked-in-button {
+	background-image: url('../../images/Sign-in-Large-Default.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 121%;
+	margin-top: 50px;
+	height: 35px;
+	margin-left: -25px;
+
+}
+
+.brand-text {
+	color: $blue-green;
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+.brand-subtext {
+	color: $dark-gray;
+	text-align: center;
+	font-size: 1.4em;
+	margin-top: 10px;
+}
+
+.centered {
+	position: absolute;
+	margin-left: -94px;
+	left: 53%;
+	top: 50%;
+	margin-top: 150px;
+	width: 200px;
+}
