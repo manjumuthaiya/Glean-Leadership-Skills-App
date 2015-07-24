@@ -1,9 +1,5 @@
-// Ionic Starter App
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-angular.module('GleanApp', ['ionic', 'GleanApp.controllers', 'GleanApp.services', 'LocalForageModule'])
+angular.module('GleanApp', ['ionic', 'config', 'GleanApp.controllers', 'GleanApp.services', 'LocalForageModule', 'Orbicular'])
 .config(config)
 .run(run);
 
@@ -27,11 +23,12 @@ function config ($stateProvider, $urlRouterProvider) {
     controller: 'AppCtrl',
     templateUrl: 'templates/menu.html'
   })
-  .state('app.home', {
-    url: '/home',
+  .state('app.progress', {
+    url: '/progress',
     views: {
       'menuContent' : {
-          templateUrl: 'templates/home.html'
+          templateUrl: 'templates/progress.html',
+          controller: 'ProgressCtrl'
       }
     }
   });
@@ -68,7 +65,7 @@ function run($ionicPlatform, $rootScope, $state, $localForage, LoginService) {
          console.log("db is: ",$rootScope.localUser);
 
          LoginService.tryAutoLogin().then(function(token) {
-            $state.go('app.home');    //Already logged in
+            $state.go('app.progress');    //Already logged in
          }, function(error) {
             $state.go('login');     //Needs to log in (token not found in local storage)
          })

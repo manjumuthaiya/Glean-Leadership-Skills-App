@@ -1,6 +1,6 @@
 @import "_colors";
 @import "compass/css3/font-face";
-
+@import "../bower_components/orbicular/_orbicular.scss";
 
 @import "../bower_components/ionic/scss/ionic";
 
@@ -14,6 +14,17 @@
 body {
 	font-family: Quicksand;
 }
+
+@include orbicular(
+    $barColor:  #F37400,    // The completed progress color
+    $barBg:     #EAF0F1,       // The remaining progress color
+    $barWidth:  8,          // The bar width is defined as a percentage of the width of the circle
+    $contentBg: #30485F,    // The circle center
+    $fontSize:  8,          // Content font-size as a percentage of the circle size
+    $fontColor: #FFF,       // Content text color
+    $transTime: 1s,       // Time to animate the movement
+    $transFunc: linear     // transition timing
+);
 
 .logo {
 	background-image: url('../../images/logo.jpg');
@@ -55,4 +66,10 @@ body {
 	top: 50%;
 	margin-top: 150px;
 	width: 200px;
+}
+
+.progress-container {
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 10px;
 }

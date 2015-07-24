@@ -38,13 +38,13 @@ grunt.loadNpmTasks('grunt-contrib-compass');
         space: '  ',
         wrap: '"use strict";\n\n {%= __ngModule %}',
         name: 'config',
-        dest: '<%= yeoman.app %>/<%= yeoman.scripts %>/configuration.js'
+        dest: '<%= yeoman.app %>/<%= yeoman.scripts %>/config/configuration.js'
       },
       development: {
         constants: {
           ENV: {
             name: 'development',
-            apiEndpoint: 'http://dev.yoursite.com:10000/'
+            apiEndpoint: 'https://1-dot-gleanleadershipskillsdev.appspot.com'
           }
         }
       },

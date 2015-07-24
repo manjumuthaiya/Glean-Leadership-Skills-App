@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('GleanApp.services', [])
+angular.module('GleanApp.services')
 .factory('LoginService', LoginService);
 
 //####################################
@@ -16,7 +16,7 @@ angular.module('GleanApp.services', [])
  * @description
  * LogIn service
  */
- function LoginService ($q, $rootScope) {
+ function LoginService ($q, $rootScope, $http, User) {
  	
  	var service = {
  		login: login,
@@ -37,8 +37,24 @@ angular.module('GleanApp.services', [])
      	 var deferred = $q.defer();
 
      	 function loginSuccess(token) {
-     	 	$rootScope.localUser.setItem('linkedin_token', token).then(function() {
-     	 		deferred.resolve();
+     	 	$rootScope.localUser.setItem('linkedin_token', token);
+     	 	$http.defaults.headers.common['Authorization'] = 'Bearer ' + token;
+     	 	console.log("trying to retrieve basic profile...");
+     	 	$http
+     	 	.get('https://api.linkedin.com/v1/people/~?format=json')
+     	 	.success(function(data, status, headers, config) {
+     	 		var user = {
+     	 			id: data.id,
+     	 			firstName: data.firstName,
+     	 			lastName: data.lastName,
+     	 			headline: data.headline
+     	 		};
+     	 		console.log("our user is: ", user);
+     	 		User.saveLocalUser(user);
+     	 	})
+     	 	.error(function(data, status, headers, config) {
+     	 		 console.log("ERROR!", data, status, headers, config);
+
      	 	});
      	 }
 

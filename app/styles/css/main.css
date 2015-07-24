@@ -12579,7 +12579,105 @@ body {
   font-family: Quicksand;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\0000348}}
+orbicular, [orbicular] {
+  display: block;
+  position: relative;
+  height: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #EAF0F1;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\0000354}}
+orbicular *, orbicular *:after, orbicular *:before, [orbicular] *, [orbicular] *:after, [orbicular] *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\0000363}}
+orbicular > div.co-circle, orbicular div.co-fill, [orbicular] > div.co-circle, [orbicular] div.co-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  background: transparent;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-transition: -webkit-transform 1s linear;
+  -moz-transition: -moz-transform 1s linear;
+  -ms-transition: -ms-transform 1s linear;
+  -o-transition: -o-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\0000387}}
+orbicular > div.co-circle, [orbicular] > div.co-circle {
+  clip: rect(0px, 1em, 1em, 0.5em);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\00003100}}
+orbicular > div.co-circle > div.co-fill, [orbicular] > div.co-circle > div.co-fill {
+  clip: rect(0em, 0.5em, 1em, 0em);
+  background-color: #F37400;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\00003111}}
+orbicular > div.co-shadow, [orbicular] > div.co-shadow {
+  display: none;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background: transparent;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\00003127}}
+orbicular > div.co-content, [orbicular] > div.co-content {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  height: 0.84em;
+  width: 0.84em;
+  margin-left: 0.08em;
+  margin-top: 0.08em;
+  background-color: #30485F;
+  border-radius: 0.42em;
+  -webkit-border-radius: 0.42em;
+  -moz-border-radius: 0.42em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\00003146}}
+orbicular > div.co-content > div, [orbicular] > div.co-content > div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\00003151}}
+orbicular > div.co-content > div > div, [orbicular] > div.co-content > div > div {
+  display: table-row;
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\00003156}}
+orbicular > div.co-content > div > div > div, [orbicular] > div.co-content > div > div > div {
+  position: relative;
+  display: table-cell;
+  font-size: 0.08em;
+  color: #FFF;
+  line-height: 1em;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000329}}
 .logo {
   background-image: url("../../images/logo.jpg");
   background-repeat: no-repeat;
@@ -12588,7 +12686,7 @@ body {
   margin-left: 21px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000337}}
 .linked-in-button {
   background-image: url("../../images/Sign-in-Large-Default.png");
   background-repeat: no-repeat;
@@ -12599,7 +12697,7 @@ body {
   margin-left: -25px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000348}}
 .brand-text {
   color: #00c2db;
   text-align: center;
@@ -12607,7 +12705,7 @@ body {
   margin-top: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000355}}
 .brand-subtext {
   color: #848485;
   text-align: center;
@@ -12615,7 +12713,7 @@ body {
   margin-top: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000362}}
 .centered {
   position: absolute;
   margin-left: -94px;
@@ -12623,4 +12721,11 @@ body {
   top: 50%;
   margin-top: 150px;
   width: 200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/main\.scss}line{font-family:\0000371}}
+.progress-container {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
