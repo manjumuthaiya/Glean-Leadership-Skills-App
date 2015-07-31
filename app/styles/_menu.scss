@@ -1,0 +1,54 @@
+
+.menu-positive {
+	background-color: $positive;
+	color: #fff;
+	padding-top:  8.5rem;
+	text-transform: uppercase;
+
+	a {
+
+  			background-color: transparent;
+			border: none;
+			font-size: 1.25em;
+			text-align: center;
+			color: #fff;
+
+			i {
+				float: left;
+				color: $dark-gray;
+			}
+			
+  		}
+
+  .item.active,
+  .item.activated,
+  .item-complex.active .item-content,
+  .item-complex.activated .item-content, 
+  .item .item-content.active, 
+  .item .item-content.activated {
+  		padding: 6px;
+  		border: none;
+
+  		a {
+  				background-color: transparent;
+				border: none;
+				font-size: 1.25em;
+				text-align: center;
+				color: #fff;
+
+				i {
+					float: left;
+					color: $dark-gray;
+				}
+
+  		}
+  }
+
+  .item,
+  .item-complex .item-content, 
+  .item-radio .item-content {
+  	background-color: $positive;
+	color: #fff;
+	border: none;		
+  }
+}

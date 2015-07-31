@@ -1,75 +1,22 @@
 @import "_colors";
-@import "compass/css3/font-face";
+@import "_mixins";
+@import "_fonts";
 @import "../bower_components/orbicular/_orbicular.scss";
-
 @import "../bower_components/ionic/scss/ionic";
 
-@font-face {
-  font-family: "Quicksand";
-  src: url('../fonts/Quicksand-Regular.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-	font-family: Quicksand;
-}
+@import "_views";
+@import "_buttons";
+@import "_menu";
 
 @include orbicular(
     $barColor:  #F37400,    // The completed progress color
     $barBg:     #EAF0F1,       // The remaining progress color
-    $barWidth:  8,          // The bar width is defined as a percentage of the width of the circle
+    $barWidth:  12,          // The bar width is defined as a percentage of the width of the circle
     $contentBg: #30485F,    // The circle center
-    $fontSize:  8,          // Content font-size as a percentage of the circle size
+    $fontSize:  15,          // Content font-size as a percentage of the circle size
     $fontColor: #FFF,       // Content text color
     $transTime: 1s,       // Time to animate the movement
     $transFunc: linear     // transition timing
 );
 
-.logo {
-	background-image: url('../../images/logo.jpg');
-	background-repeat: no-repeat;
-	background-size: 147px;
-	height: 100px;
-	margin-left: 21px;
-}
 
-.linked-in-button {
-	background-image: url('../../images/Sign-in-Large-Default.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 121%;
-	margin-top: 50px;
-	height: 35px;
-	margin-left: -25px;
-
-}
-
-.brand-text {
-	color: $blue-green;
-	text-align: center;
-	font-size: 1.5em;
-	margin-top: 10px;
-}
-
-.brand-subtext {
-	color: $dark-gray;
-	text-align: center;
-	font-size: 1.4em;
-	margin-top: 10px;
-}
-
-.centered {
-	position: absolute;
-	margin-left: -94px;
-	left: 53%;
-	top: 50%;
-	margin-top: 150px;
-	width: 200px;
-}
-
-.progress-container {
-	width: 200px;
-	margin: 0 auto;
-	margin-top: 10px;
-}

@@ -21,7 +21,8 @@ angular.module('GleanApp.services', [])
  	var service = {
  		saveLocalUser: saveLocalUser,
  		getNextExerciseForUser: getNextExerciseForUser,
-          initgapi: initgapi
+          initgapi: initgapi,
+          nextExercise: {}
  	};
 
  	return service;
@@ -84,17 +85,15 @@ angular.module('GleanApp.services', [])
  		var deferred = $q.defer();
 
  		getLocalUser().then(function(user) {
- 			console.log("GOt local user: ", user);
- 			var url = ENV.apiEndpoint + '/_ah/api/certify/v1/getNextExerciseForUser?userId=' + user.id;
-	 		console.log("Endpoint: ", url);
-	 		$http
-	 		.get(url)
-	 		.success(function(data, status, headers, config) {
-	 			deferred.resolve(data);
-		 	})
-	 		.error(function(data, status, headers, config) {
-	 			deferred.reject(data);
-	 		})
+
+               gapi.client.certify.getNextExerciseForUser({'userId': user.id})
+               .then(function(data) {
+                    service.nextExercise = data.result;
+                    deferred.resolve(data);
+               }, function(error) {
+                    deferred.reject(error);
+               })
+	 		
  		});
  		
  		return deferred.promise;

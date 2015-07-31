@@ -54,7 +54,8 @@ function run($ionicPlatform, $rootScope, $state, $localForage, LoginService) {
 
       //Do some initial setup for the app
       function init () {
-         SocialGap.Linkedin_ChangeSettings('********', '********', 'http://localhost/auth/linkedin/callback', 'r_basicprofile');
+          alert("init");
+         SocialGap.Linkedin_ChangeSettings('75w41rzx3jnkq1', 'SRK294JiW4OsId3f', 'http://localhost/auth/linkedin/callback', 'r_basicprofile');
       
      
          $rootScope.localUser = $localForage.createInstance({

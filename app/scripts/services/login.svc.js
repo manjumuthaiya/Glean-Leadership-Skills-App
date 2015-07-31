@@ -51,10 +51,11 @@ angular.module('GleanApp.services')
      	 		};
      	 		console.log("our user is: ", user);
      	 		User.saveLocalUser(user);
+                    deferred.resolve();
      	 	})
      	 	.error(function(data, status, headers, config) {
      	 		 console.log("ERROR!", data, status, headers, config);
-
+                     deferred.reject(data);
      	 	});
      	 }
 

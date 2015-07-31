@@ -22,28 +22,27 @@ angular.module('GleanApp.controllers', ['GleanApp.services'])
  * @description
  * The main controller for the app
  */
-function AppCtrl ($scope, $state, $window, LoginService, User) {
+function AppCtrl ($scope, $state, $window, $rootScope, LoginService, User) {
 
-	console.log("AppCtrl");
 	$scope.logout = logout;
 	$window.init = init;
 	$scope.initgapi = initgapi;
 
 	function init () {
 		$scope.$apply($scope.initgapi);
-	};
+	}
 
 	function logout () {
 		LoginService.logout().then(function() {
-			$state.go("login");
+			$state.go('login');
 		});
 	}
 
 	function initgapi () {
 		User.initgapi().then(function() {
-			console.log("Gapi Initialised successfully:", gapi);
+			$rootScope.$broadcast('init-complete');
 		}, function(error) {
-			console.log("Error initializing gapi:", error);
+			console.log('Error initializing gapi:', error);
 		})
 	}
 }

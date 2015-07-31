@@ -27,8 +27,8 @@ function LoginCtrl ($scope, $state, LoginService) {
 
   	function login() {
     	console.log("Starting !!");
-    	LoginService.login().then(function(token) {
-        console.log("Successful login callback "+token);
+    	LoginService.login().then(function() {
+        console.log("Successful login callback ");
         $state.go("app.progress");
       }, function(error) {
         alert("Login failed :(");

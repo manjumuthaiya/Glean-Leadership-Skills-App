@@ -1,6 +1,6 @@
 <ion-side-menus>
 	<ion-pane ion-side-menu-content>
-		<ion-nav-bar class="bar-dark">
+		<ion-nav-bar class="bar-positive">
 			<ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
@@ -11,30 +11,22 @@
 	</ion-pane>
 
 	<ion-side-menu side="left">
-		<header class="bar bar-header bar-dark">
-        </header>
-        <div class="bar bar-subheader bar-dark">
-            <h1 class="title menu title-right">Menu</h1>
-        </div>
-        <ion-content class="has-subheader menu-dark-bg" scroll="false">
+        <ion-pane class="menu-positive" scroll="false">
 
             <ion-list class="main-navigation">
                 <ion-item nav-clear menu-close ui-sref="app.home">
-                    <span>Home</span>
+                    <i class="ion-home"></i><span> Home</span>
                 </ion-item>
-              	<ion-item nav-clear menu-close>
-          			Profile
+              	<ion-item nav-clear menu-close href="#">
+          			<i class="ion-edit"></i><span> Today's exercise</span>
                 </ion-item>
-                <ion-item nav-clear menu-close>
-                    <span>Members</span>
+                <ion-item nav-clear menu-close href="#">
+                    <i class="ion-ios-information"></i><span> About GLEAN ™</span>
                 </ion-item>
-                <ion-item nav-clear menu-close>
-                    <span>Code of Conduct</span>
-                </ion-item>
-                <ion-item nav-clear href="#" ng-click="logout()">
-                    <span>Log Out</span>
+                <ion-item nav-clear menu-close href="#" ng-click="logout()">
+                    <i class="ion-log-out"></i><span> Log Out</span>
                 </ion-item>
             </ion-list>
-        </ion-content>
+        </ion-pane>
 	</ion-side-menu>
 </ion-side-menus>

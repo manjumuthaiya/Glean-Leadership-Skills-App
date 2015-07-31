@@ -1,0 +1,65 @@
+body {
+	font-family: Quicksand;
+}
+
+.view-title {
+	@include margin($left: 20px);
+	font-size: 1.5em;
+}
+
+.center {
+	 @include center;
+}
+
+//Login Page
+.logo {
+	background-image: url('../../images/logo.jpg');
+	background-repeat: no-repeat;
+	background-size: 147px;
+	height: 100px;
+	//margin-left: 21px;
+	@include margin($left: 21px);
+}
+
+.brand-text {
+	color: $blue-green;
+	text-align: center;
+	font-size: 1.5rem;
+	@include margin($top:10px);
+}
+
+.brand-subtext {
+	color: $dark-gray;
+	text-align: center;
+	font-size: 1.4rem;
+	@include margin($top: 10px);
+}
+
+.vcentered {
+	position: absolute;
+	left: 53%;
+	width: 200px;
+	@include margin($top:150px, $left: -94px)
+}
+
+//Progress Page
+
+.progress-container {
+	width: 150px;
+	@include margin($top: 30px);
+	@include center;
+}
+
+.progress-text {
+	@include center;
+	@include margin($top: 20px, $bottom: 20px);
+	color: $light-gray;
+	font-size: 1.5em;
+	span {
+		color: $positive;
+		font-size: 1.8em;
+		vertical-align: sub;
+	}
+}
+
+

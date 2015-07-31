@@ -1,11 +1,18 @@
 <ion-view>
+  <ion-nav-title>
+  	<span class="view-title">GLEAN ™</span>
+  </ion-nav-title>
   <ion-content>
+  <div class="progress-text">Your Progress</div>
   <div class="progress-container">
-  	  <orbicular total="100" progression="70" resize>
-        70%
+  	  <orbicular total="100" progression="userProgress" resize>
+        {{userProgress}}%
     </orbicular>
 
   </div>
-  
+  <div class="progress-text"><span>{{doneCount}}</span> done</div>
+  <div class="progress-text"><span>{{pendingCount}}</span> to go!</div>
+
+  <div class="button button-positive next-exercise-button">Begin next exercise <i class="ion-ios-arrow-thin-right"></i></div>
   </ion-content>
 </ion-view>

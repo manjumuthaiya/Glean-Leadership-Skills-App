@@ -1,0 +1,18 @@
+.linked-in-button {
+	background-image: url('../../images/Sign-in-Large-Default.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 121%;
+	//margin-top: 50px;
+	height: 35px;
+	//margin-left: -25px;
+	@include margin($top: 50px, $left: -25px);
+}
+
+
+.next-exercise-button {
+	@include center;
+	@include margin($top: 20px, $left: 15%);
+	font-size: 1.3em;
+	
+}

@@ -1,0 +1,19 @@
+@import "compass/css3/font-face";
+
+@font-face {
+  font-family: "Quicksand";
+  src: url('../fonts/Quicksand-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url('../fonts/Quicksand-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.medium-font-size {
+	font-size: 1.5em;
+}
