@@ -36,7 +36,6 @@ var SocialGap = (function (socialGap) {
     document.addEventListener('deviceready', function(){
 		socialGap.deviceReady=true;		
 	}, false);
-
 	
 	/*-----------------------------------------------------------------------
 	/* Common utilities

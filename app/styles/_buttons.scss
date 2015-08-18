@@ -10,9 +10,60 @@
 }
 
 
-.next-exercise-button {
+.glean-button {
 	@include center;
-	@include margin($top: 20px, $left: 15%);
+	margin-top: 2em;
+	display: block;
+	width: 250px;
 	font-size: 1.3em;
+	i {
+		color: $dark-gray;
+		font-size: 1.5em;
+		float: right;
+	}
 	
+}
+
+.exercise-done-button {
+	@include margin($top: 1.2em);
+	width: 200px;
+	i {
+		float: left;
+	}
+}
+
+.success-button {
+	@include center;
+	margin-top: 2em;
+	display: block;
+	width: 250px;
+	font-size: 1.3em;
+	background-color: $success-green;
+	border-color: $success-green;
+	color: $white;
+	i {
+		color: $white;
+		font-size: 1.5em;
+		float: left;
+	}
+	&:active , &:hover , &:focus{
+		color: $white;
+		background-color: $success-green;
+	}
+}
+
+.forward-button {
+	@extend .ion-ios-arrow-forward;
+}
+
+.platform-android {
+	.forward-button {
+		@extend .ion-android-arrow-forward;
+	}
+}
+
+.platform-ios {
+	.forward-button {
+		@extend .ion-ios-arrow-forward;
+	}
 }

@@ -1,10 +1,12 @@
 <ion-side-menus>
 	<ion-pane ion-side-menu-content>
 		<ion-nav-bar class="bar-positive">
-			<ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-        </button>
-      </ion-nav-buttons>
+    		<ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+            </ion-nav-buttons>
+             <ion-nav-back-button>
+            </ion-nav-back-button>
         </ion-nav-bar>
          <ion-nav-view name="menuContent" >
         </ion-nav-view>
@@ -14,7 +16,7 @@
         <ion-pane class="menu-positive" scroll="false">
 
             <ion-list class="main-navigation">
-                <ion-item nav-clear menu-close ui-sref="app.home">
+                <ion-item nav-clear menu-close ui-sref="app.progress">
                     <i class="ion-home"></i><span> Home</span>
                 </ion-item>
               	<ion-item nav-clear menu-close href="#">

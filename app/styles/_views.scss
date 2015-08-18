@@ -11,6 +11,10 @@ body {
 	 @include center;
 }
 
+.left {
+	float: left;
+}
+
 //Login Page
 .logo {
 	background-image: url('../../images/logo.jpg');
@@ -52,7 +56,7 @@ body {
 
 .progress-text {
 	@include center;
-	@include margin($top: 20px, $bottom: 20px);
+	@include margin($top: 2em, $bottom: 2em);
 	color: $light-gray;
 	font-size: 1.5em;
 	span {
@@ -60,6 +64,25 @@ body {
 		font-size: 1.8em;
 		vertical-align: sub;
 	}
+}
+
+//Text exercise page
+
+.exercise-content {
+	color: $light-gray;
+	font-size: 1em;
+	text-align: justify;
+	border: 0.5px solid $light-gray;
+	border-radius: 10px;
+	padding: 1rem;
+	@include margin($left: 0.5rem, $right:0.5rem);
+}
+
+.exercise-title {
+	color: $dark-gray;
+	font-size: 1.2em;
+	text-align: center;
+	@include padding($top: 1em, $bottom: 1em);
 }
 
 

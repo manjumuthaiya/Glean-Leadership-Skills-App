@@ -55,6 +55,7 @@
 .ion-android-arrow-dropup:before,
 .ion-android-arrow-dropup-circle:before,
 .ion-android-arrow-forward:before,
+.platform-android .forward-button:before,
 .ion-android-arrow-up:before,
 .ion-android-attach:before,
 .ion-android-bar:before,
@@ -302,6 +303,8 @@
 .ion-ios-arrow-back:before,
 .ion-ios-arrow-down:before,
 .ion-ios-arrow-forward:before,
+.forward-button:before,
+.platform-ios .forward-button:before,
 .ion-ios-arrow-left:before,
 .ion-ios-arrow-right:before,
 .ion-ios-arrow-thin-down:before,
@@ -873,7 +876,7 @@
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\00003759}}
-.ion-android-arrow-forward:before {
+.ion-android-arrow-forward:before, .platform-android .forward-button:before {
   content: "";
 }
 
@@ -2108,7 +2111,7 @@
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/ionic\/scss\/ionicons\/_ionicons-icons\.scss}line{font-family:\000031006}}
-.ion-ios-arrow-forward:before {
+.ion-ios-arrow-forward:before, .forward-button:before, .platform-ios .forward-button:before {
   content: "";
 }
 
@@ -12602,7 +12605,12 @@ body {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000314}}
+.left {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000319}}
 .logo {
   background-image: url("../../images/logo.jpg");
   background-repeat: no-repeat;
@@ -12611,7 +12619,7 @@ body {
   margin: auto auto auto 21px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000328}}
 .brand-text {
   color: #00c2db;
   text-align: center;
@@ -12619,7 +12627,7 @@ body {
   margin: 10px auto auto auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000335}}
 .brand-subtext {
   color: #848485;
   text-align: center;
@@ -12627,7 +12635,7 @@ body {
   margin: 10px auto auto auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000342}}
 .vcentered {
   position: absolute;
   left: 53%;
@@ -12635,7 +12643,7 @@ body {
   margin: 150px auto auto -94px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000351}}
 .progress-container {
   width: 150px;
   margin: 30px auto auto auto;
@@ -12643,19 +12651,38 @@ body {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000357}}
 .progress-text {
   margin: 0 auto;
   text-align: center;
-  margin: 20px auto 20px auto;
+  margin: 2em auto 2em auto;
   color: #6d6d6d;
   font-size: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000362}}
 .progress-text span {
   color: #42d2cd;
   font-size: 1.8em;
   vertical-align: sub;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000371}}
+.exercise-content {
+  color: #6d6d6d;
+  font-size: 1em;
+  text-align: justify;
+  border: 0.5px solid #6d6d6d;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: auto 0.5rem auto 0.5rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_views\.scss}line{font-family:\0000381}}
+.exercise-title {
+  color: #848485;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 1em 0 1em 0;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_buttons\.scss}line{font-family:\000031}}
@@ -12669,18 +12696,60 @@ body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_buttons\.scss}line{font-family:\0000313}}
-.next-exercise-button {
+.glean-button {
   margin: 0 auto;
   text-align: center;
-  margin: 20px auto auto 15%;
+  margin-top: 2em;
+  display: block;
+  width: 250px;
   font-size: 1.3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_buttons\.scss}line{font-family:\0000319}}
+.glean-button i {
+  color: #848485;
+  font-size: 1.5em;
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_buttons\.scss}line{font-family:\0000327}}
+.exercise-done-button {
+  margin: 1.2em auto auto auto;
+  width: 200px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_buttons\.scss}line{font-family:\0000330}}
+.exercise-done-button i {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_buttons\.scss}line{font-family:\0000335}}
+.success-button {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2em;
+  display: block;
+  width: 250px;
+  font-size: 1.3em;
+  background-color: #00DC7E;
+  border-color: #00DC7E;
+  color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_buttons\.scss}line{font-family:\0000344}}
+.success-button i {
+  color: #ffffff;
+  font-size: 1.5em;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_buttons\.scss}line{font-family:\0000349}}
+.success-button:active, .success-button:hover, .success-button:focus {
+  color: #ffffff;
+  background-color: #00DC7E;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\000032}}
 .menu-positive {
   background-color: #42d2cd;
   color: #fff;
-  padding-top: 8.5rem;
+  padding: 8.5em 0 0 0;
   text-transform: uppercase;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\000038}}
@@ -12695,18 +12764,22 @@ body {
 .menu-positive a i {
   float: left;
   color: #848485;
+  font-size: 1.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\0000322}}
+.menu-positive a span {
+  margin-left: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\0000328}}
 .menu-positive .item.active,
 .menu-positive .item.activated,
 .menu-positive .item-complex.active .item-content,
 .menu-positive .item-complex.activated .item-content,
 .menu-positive .item .item-content.active,
 .menu-positive .item .item-content.activated {
-  padding: 6px;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\0000336}}
 .menu-positive .item.active a,
 .menu-positive .item.activated a,
 .menu-positive .item-complex.active .item-content a,
@@ -12719,7 +12792,7 @@ body {
   text-align: center;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\0000343}}
 .menu-positive .item.active a i,
 .menu-positive .item.activated a i,
 .menu-positive .item-complex.active .item-content a i,
@@ -12729,13 +12802,14 @@ body {
   float: left;
   color: #848485;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/styles\/_menu\.scss}line{font-family:\0000351}}
 .menu-positive .item,
 .menu-positive .item-complex .item-content,
 .menu-positive .item-radio .item-content {
   background-color: #42d2cd;
   color: #fff;
   border: none;
+  padding: 0.6em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/manju\/Documents\/Collective\%20Changes\/workspace\/GleanLeadershipSkills\/app\/bower_components\/orbicular\/_orbicular\.scss}line{font-family:\0000348}}

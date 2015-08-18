@@ -6,7 +6,7 @@ function init() {
   });
 }
 
-angular.module('GleanApp.controllers', ['GleanApp.services'])
+angular.module('GleanApp.controllers', ['ngSanitize', 'GleanApp.services'])
 .controller('AppCtrl', AppCtrl);
 
 
@@ -22,11 +22,18 @@ angular.module('GleanApp.controllers', ['GleanApp.services'])
  * @description
  * The main controller for the app
  */
-function AppCtrl ($scope, $state, $window, $rootScope, LoginService, User) {
+function AppCtrl ($scope, $state, $window, $rootScope, $ionicLoading, LoginService, User) {
+
+	//####################################
+	//Scope functions
+	//####################################
 
 	$scope.logout = logout;
 	$window.init = init;
 	$scope.initgapi = initgapi;
+	$scope.showSpinner = showSpinner;
+	$scope.hideSpinner = hideSpinner;
+
 
 	function init () {
 		$scope.$apply($scope.initgapi);
@@ -45,4 +52,14 @@ function AppCtrl ($scope, $state, $window, $rootScope, LoginService, User) {
 			console.log('Error initializing gapi:', error);
 		})
 	}
+
+	function showSpinner () {
+		$ionicLoading.show();
+	}
+
+	function hideSpinner () {
+		$ionicLoading.hide();
+	}
+
+	
 }

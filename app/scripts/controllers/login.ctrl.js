@@ -29,7 +29,7 @@ function LoginCtrl ($scope, $state, LoginService) {
     	console.log("Starting !!");
     	LoginService.login().then(function() {
         console.log("Successful login callback ");
-        $state.go("app.progress");
+        $state.go("app.progress", {firstLogin: true});
       }, function(error) {
         alert("Login failed :(");
         console.log(error);

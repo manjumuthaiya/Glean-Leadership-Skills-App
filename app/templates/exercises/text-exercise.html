@@ -1,0 +1,16 @@
+<ion-view>
+ 	<ion-nav-buttons side="right">
+ 		<button ng-click="goForward()" class="button buttons button-clear header-item" ng-hide="isCurrentExercise()">
+ 			Next <i class="icon forward-button">
+ 			</i>
+ 		</button>
+    </ion-nav-buttons>
+	<ion-content>
+		<div class="exercise-title">{{exercise.title}}</div>
+		<div class="exercise-content" ng-bind-html="content">
+		</div>
+		<div class="button button-positive glean-button exercise-done-button" ng-show="isCurrentExercise()" ng-click="done()">
+			<i class="ion-ios-checkmark left"></i> Done
+		</div>
+	</ion-content>
+</ion-view>

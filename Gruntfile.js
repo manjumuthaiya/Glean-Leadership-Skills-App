@@ -37,7 +37,7 @@ grunt.loadNpmTasks('grunt-contrib-compass');
       options: {
         space: '  ',
         wrap: '"use strict";\n\n {%= __ngModule %}',
-        name: 'config',
+        name: 'GleanApp.config',
         dest: '<%= yeoman.app %>/<%= yeoman.scripts %>/config/configuration.js'
       },
       development: {
@@ -99,6 +99,15 @@ grunt.loadNpmTasks('grunt-contrib-compass');
           port: 9002,
           open: true,
           base: ['coverage']
+        }
+      },
+      livereload: {
+        options: {
+            open: true, // set to false to prevent opening default browser
+            base: [
+                '.tmp',
+                '<%= yeoman.app %>'
+            ]
         }
       }
     },

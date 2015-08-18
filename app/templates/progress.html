@@ -13,6 +13,14 @@
   <div class="progress-text"><span>{{doneCount}}</span> done</div>
   <div class="progress-text"><span>{{pendingCount}}</span> to go!</div>
 
-  <div class="button button-positive next-exercise-button">Begin next exercise <i class="ion-ios-arrow-thin-right"></i></div>
+  <div class="button button-positive glean-button" ng-show="pending === true" ng-click="goToNextExercise()">
+      Begin next exercise 
+      <i class="ion-ios-arrow-thin-right"></i>
+  </div>
+  
+  <div class="button success-button" ng-show="pending === false">
+    <i class="ion-ios-checkmark left"></i>
+      All Caught Up!
+  </div>
   </ion-content>
 </ion-view>
